@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,11 +23,91 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 10px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.295);
+  border-radius: 2px;
+  height: 22vh;
+  width: 30vh;
+  text-decoration: none;
+  color: black;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.716);
+  transition: 0.3s ease-in-out;
+}
+.coin-box img {
+  width: 30%;
+}
+.coin-box {
+  height: 26vh;
+  padding: 10px 10px;
+}
+.btn-group input {
+  scale: 1.7;
+}
+.currencyText {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.loading {
+  width: 40vh;
+  height: 40vh;
+}
+.error {
+  width: 40vh;
+}
+.progress-bar {
+  width: 50%;
+}
+.coin-detail-box {
+  padding: 0 15%;
+}
+.coin-image {
+  width: 6rem;
+}
+.inc,
+.dec {
+  width: 1.7rem;
+  margin-right: 4px;
+}
+.coin-table {
+  margin: auto;
+  max-width: 100vh;
+  padding: 15px 20px;
+  line-height: 2rem;
+}
+.header {
+  min-height: fit-content;
+  min-width: 100%;
+  overflow: hidden;
+  background-image: url(/src/Components/images/background.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+}
+.doge-hub{
+  padding: 10%;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  word-spacing: 0.2rem;
+}
+.doge-hub h1{
+  font-size: 5rem;
+  margin: 10px 0px;
+}
+.author{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.author img{
+  scale: 0.8;
+  cursor: pointer;
 }
